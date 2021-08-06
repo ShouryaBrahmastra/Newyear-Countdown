@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Countdown</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
 </head>
 
 <body>
+
     <h1>New Years Countdown</h1>
 
     <div class="countdown-container">
@@ -29,6 +31,14 @@
             <p class="big-text" id="secs">0</p>
             <span>seconds</span>
         </div>
+    </div>
+
+    <audio id="player" src="./Mashup.mp3" loop></audio>
+    <div>
+        <button onclick="document.getElementById('player').play()">Play</button>
+        <button onclick="document.getElementById('player').pause()">Pause</button>
+        <button onclick="document.getElementById('player').volume+=0.1">Volume Up</button>
+        <button onclick="document.getElementById('player').volume-=0.1">Volume Down</button>
     </div>
 </body>
 
